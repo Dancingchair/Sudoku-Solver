@@ -1,0 +1,8 @@
+#ifndef TEST_UTIL_H
+#define TEST_UTIL_H
+#include <functional>
+#include "grid_alias.h"
+
+void test_isValid(const std::function<bool(const grid&, int, int, int)>& isValid, grid& sudoku);
+
+#endif
